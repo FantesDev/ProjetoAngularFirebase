@@ -1,4 +1,43 @@
 <ion-content [fullscreen]="true">
-    
+    <ion-row class="ion-justify-content-center">
+        <ion-col size="10" size-lg="6">
+            <ion-card>
+                <ion-item>
+                    <ion-label>
+                        <h1>Cadastro</h1>
+                    </ion-label>
+                    <ion-item>
+                        <ion-input label="E-mail" [(ngModel)]="this.user.email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input label="Senha" [(ngModel)]="this.user.password"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-button shape="round" color="success" size="default" (click)="create()">Criar</ion-button>
+                    </ion-item>
+                </ion-item>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+        <ion-col size="10" size-lg="6">
+            <ion-card>
+                <ion-item>
+                    <ion-label>
+                        <h1>Login</h1>
+                    </ion-label>
+                    <ion-item>
+                        <ion-input label="E-mail" [(ngModel)]="this.user.email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-input label="Senha" [(ngModel)]="this.user.password"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-button shape="round" color="tertiary" size="default" (click)="login()">Logar</ion-button>
+                    </ion-item>
+                </ion-item>
+            </ion-card>
+        </ion-col>
+    </ion-row>
 
 </ion-content>
